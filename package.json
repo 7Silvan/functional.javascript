@@ -1,0 +1,26 @@
+{
+  "name": "functional.javascript",
+  "version": "1.0.0",
+  "description": "be functional and write cleaner code",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -w",
+    "lint": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pullstream/functional.javascript.git"
+  },
+  "keywords": [],
+  "author": "davy@philos.io",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pullstream/functional.javascript/issues"
+  },
+  "homepage": "https://github.com/pullstream/functional.javascript#readme",
+  "devDependencies": {
+    "babel-eslint": "^5.0.0",
+    "eslint": "^2.3.0",
+    "eslint-config-airbnb": "^6.1.0"
+  }
+}
