@@ -23,3 +23,14 @@ let sum = (nums)=>{
   }
 }
 
+
+let map = (collection, callback)=>{
+  if(collection.length === 0){
+    return [];
+  }
+  else{
+    let [first, ...tail] = collection;
+    return [callback(first), ...map(tail, callback)]
+  }
+}
+
