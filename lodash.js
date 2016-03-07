@@ -14,3 +14,12 @@ let isNull = (collection) =>{
 };
 
 
+let sum = (nums)=>{
+  if(isNull(nums))
+    return 0;
+  else {
+    let [first, ...tail] = nums;
+    return first + sum(tail);
+  }
+}
+
