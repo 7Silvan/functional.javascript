@@ -1,35 +1,35 @@
 // Simple example of writing functional style in JavaScript
 
-let double = (nums) =>{
+const double = (nums) =>{
   if(isNull(nums)){
     return [];
   }else{
-    let [first, ...tail] = nums;
+    const [first, ...tail] = nums;
     return [2*first, ...double(tail)];
   }
 };
 
-let isNull = (collection) =>{
+const isNull = (collection) =>{
   return !collection || (collection && collection.length === 0);
 };
 
 
-let sum = (nums)=>{
+const sum = (nums)=>{
   if(isNull(nums))
     return 0;
   else {
-    let [first, ...tail] = nums;
+    const [first, ...tail] = nums;
     return first + sum(tail);
   }
 }
 
 
-let map = (collection, callback)=>{
+const map = (collection, callback)=>{
   if(collection.length === 0){
     return [];
   }
   else{
-    let [first, ...tail] = collection;
+    const [first, ...tail] = collection;
     return [callback(first), ...map(tail, callback)]
   }
 }
