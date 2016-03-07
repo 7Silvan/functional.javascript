@@ -4,15 +4,16 @@
   "description": "be functional and write cleaner code",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -w",
+    "test": "mocha --compilers js:babel/register -w",
+    "coverage": "mocha -- --compilers js:babel/register",
     "lint": "eslint"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pullstream/functional.javascript.git"
   },
-  "keywords": [],
-  "author": "davy@philos.io",
+  "keywords": ["functional programming", "javascript"],
+  "author": "davyengone",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pullstream/functional.javascript/issues"
@@ -21,6 +22,17 @@
   "devDependencies": {
     "babel-eslint": "^5.0.0",
     "eslint": "^2.3.0",
-    "eslint-config-airbnb": "^6.1.0"
+    "eslint-config-airbnb": "^6.1.0",
+    "babel": "^5.8.23",
+    "babel-eslint": "^5.0.0",
+    "babel-runtime": "^5.8.25",
+    "chai": "^3.3.0",
+    "eslint-config-airbnb": "^6.1.0",
+    "isparta": "^3.1.0",
+    "istanbul": "^0.3.22",
+    "jsdoc": "^3.3.3",
+    "mocha": "^2.3.3",
+    "sinon": "^1.17.1",
+    "wallaby-webpack": "0.0.9"
   }
 }
