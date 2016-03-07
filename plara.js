@@ -23,9 +23,8 @@ const sum = (nums)=>{
   }
 }
 
-
-const map = (collection, callback)=>{
-  if(collection.length === 0){
+const map = (collection, callback)=> {
+  if(collection && collection.length === 0){
     return [];
   }
   else{
