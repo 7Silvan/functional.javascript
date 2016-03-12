@@ -1,9 +1,11 @@
-var babel = require('babel');
+'use strict';
+
+let babel = require('babel');
 
 module.exports = function (wallaby) {
   return {
     files: [
-      'src/**/*.js'
+      'src/*.js'
     ],
 
     tests: [
