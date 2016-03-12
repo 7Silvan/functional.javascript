@@ -12,7 +12,10 @@
     "type": "git",
     "url": "git+https://github.com/pullstream/functional.javascript.git"
   },
-  "keywords": ["functional programming", "javascript"],
+  "keywords": [
+    "functional programming",
+    "javascript"
+  ],
   "author": "davyengone",
   "license": "MIT",
   "bugs": {
@@ -20,17 +23,17 @@
   },
   "homepage": "https://github.com/pullstream/functional.javascript#readme",
   "devDependencies": {
-    "babel-eslint": "^5.0.0",
-    "eslint": "^2.3.0",
-    "eslint-config-airbnb": "^6.1.0",
     "babel": "^5.8.23",
     "babel-eslint": "^5.0.0",
     "babel-runtime": "^5.8.25",
-    "chai": "^3.3.0",
+    "chai": "^3.5.0",
+    "eslint": "^2.3.0",
     "eslint-config-airbnb": "^6.1.0",
     "isparta": "^3.1.0",
     "istanbul": "^0.3.22",
+    "jasmine": "^2.4.1",
     "jsdoc": "^3.3.3",
+    "lodash": "^4.6.1",
     "mocha": "^2.3.3",
     "sinon": "^1.17.1",
     "wallaby-webpack": "0.0.9"

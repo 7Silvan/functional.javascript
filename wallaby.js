@@ -5,19 +5,21 @@ let babel = require('babel');
 module.exports = function (wallaby) {
   return {
     files: [
-      'src/*.js'
+      'src/index.js'
     ],
 
     tests: [
-      'test/*spec.js'
+      'src/map.spec.js'
     ],
 
     env: {
       type: 'node'
     },
 
+    testFramework: 'jasmine',
+
     compilers: {
-      '**/*.js': wallaby.compilers.babel({
+      'src/*.js': wallaby.compilers.babel({
         babel: babel,
         // https://babeljs.io/docs/usage/experimental/
         stage: 0,
